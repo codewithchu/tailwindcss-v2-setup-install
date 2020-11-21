@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.code {
-	@apply text-cwc-red;
+.card {
+	@apply rounded-lg bg-white dark:bg-gray-900 shadow-sm p-6 w-full max-w-xl mb-6;
+}
+.cardTitle {
+	@apply font-bold mr-4 flex-none;
+}
+.cardMetaInfo {
+	@apply text-gray-400 dark:text-gray-600 flex items-center justify-between flex-grow;
+}
+
+.avatar {
+	@apply flex-none overflow-hidden rounded-full w-12 h-12 border dark:border-gray-700 mr-4 dark:bg-gray-200;
+}
+
+.hashTag {
+	@apply text-lightblue-400 dark:text-lightblue-700;
 }

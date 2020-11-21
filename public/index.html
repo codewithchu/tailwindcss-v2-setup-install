@@ -1,16 +1,84 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 		<title>Tailwindcss 2.0</title>
-		<link rel="stylesheet" href="css/tailwind.css" />
+		<link href="css/tailwind.css" rel="stylesheet" />
 	</head>
 	<body>
-		<div class="flex justify-center items-center h-screen">
-			<div class="p-20 text-center">
-				<h1 class="text-9xl text-cwc-red">Tailwindcss 2.0</h1>
-				<p class="text-4xl text-cwc-blue">Is Now Here!</p>
+		<div
+			class="flex justify-center flex-col items-center h-screen bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-200"
+		>
+			<a id="lightToggle" href="#" title="Toggle Darkmode" class="fixed m-6 right-0 top-0">
+				<span class="hidden">Darkmode</span>
+				<!--sun-->
+				<svg version="1" class="h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path
+						fill="currentColor"
+						d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z"
+					/>
+				</svg>
+				<!--moon-->
+				<svg version="1" class="hidden h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path
+						fill="currentColor"
+						d="M12 2A9.91 9.91 0 0 0 9 2.46A10 10 0 0 1 9 21.54A10 10 0 1 0 12 2Z"
+					/>
+				</svg>
+			</a>
+			<!--card-->
+			<div class="card">
+				<div class="flex items-start">
+					<!--card avatar-->
+					<div class="avatar">
+						<img alt="codewithchu" src="img/cwc-logo.png" />
+					</div>
+					<!--card body-->
+					<div class="flex-grow">
+						<!--card user info-->
+						<div class="flex items-center">
+							<h3 class="cardTitle">learn to codewithchu</h3>
+							<div class="cardMetaInfo">
+								<div>@codewithchu</div>
+								<div>Nov 18</div>
+							</div>
+						</div>
+						<!--card msg-->
+						<div>
+							First Major Update with
+							<span class="hashTag">#TailwindCss</span>
+							v2.0.
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--card-->
+			<div class="card">
+				<div class="flex items-start">
+					<!--card avatar-->
+					<div class="avatar">
+						<img alt="codewithchu" src="img/cwc-logo.png" />
+					</div>
+					<!--card body-->
+					<div class="flex-grow">
+						<!--card user info-->
+						<div class="flex items-center">
+							<h3 class="cardTitle">learn to codewithchu</h3>
+							<div class="cardMetaInfo">
+								<div>@codewithchu</div>
+								<div>Nov 18</div>
+							</div>
+						</div>
+						<!--card msg-->
+						<div>
+							<span class="hashTag">#TailwindCss</span>
+							v2.0 supports
+							<span class="hashTag">#darkmode</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<script src="js/app.js"></script>
 	</body>
 </html>
