@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.wrapper {
+	@apply flex justify-center flex-col items-center h-screen bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-200;
+}
 .card {
-	@apply rounded-lg bg-white dark:bg-gray-900 shadow-sm p-6 w-full max-w-xl mb-6;
+	@apply rounded-lg bg-white dark:bg-gray-900 shadow-sm p-6 w-full max-w-xl mb-6 flex items-start;
 }
 .cardTitle {
 	@apply font-bold mr-4 flex-none;
