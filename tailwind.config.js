@@ -1,22 +1,27 @@
+const colors = require('tailwindcss/colors');
 module.exports = {
 	purge: {
 		mode: 'layers',
 		content: ['./public/**/*.html'],
 	},
-	darkMode: false, // or 'media' or 'class'
+	darkMode: 'media', // or 'media' or 'class'
 	theme: {
 		extend: {
 			colors: {
-				cwc: {
-					red: '#E84977',
-					blue: '#49AADE',
-					gray: '#222222',
-				},
+				lightblue: colors.lightBlue,
+				gray: colors.trueGray,
 			},
 		},
 	},
 	variants: {
-		extend: {},
+		extend: {
+			ringColor: ['hover'],
+			ringOpacity: ['hover'],
+			ringWidth: ['hover'],
+		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/forms'),
+		// ...
+	],
 };

@@ -2,15 +2,41 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Tailwindcss 2.0</title>
+		<title>Tailwindcss 2.0 | Login Forms</title>
 		<link rel="stylesheet" href="css/tailwind.css" />
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="card">
-				<h1 class="text-9xl text-cwc-red">Tailwindcss 2.0</h1>
-				<p class="text-4xl text-cwc-blue">Is Now Here!</p>
+			<!--login-->
+			<div class="card grid grid-cols-1 gap-4">
+				<!--avatar-->
+				<div class="formAvatar">
+					<svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-32 h-32">
+						<path
+							fill="currentColor"
+							d="M12 19.2c-2.5 0-4.71-1.28-6-3.2.03-2 4-3.1 6-3.1s5.97 1.1 6 3.1a7.232 7.232 0 01-6 3.2M12 5a3 3 0 013 3 3 3 0 01-3 3 3 3 0 01-3-3 3 3 0 013-3m0-3A10 10 0 002 12a10 10 0 0010 10 10 10 0 0010-10c0-5.53-4.5-10-10-10z"
+						/>
+					</svg>
+				</div>
+				<!--fields-->
+				<label class="block">
+					<span class="sr-only">Email address</span>
+					<input type="email" class="w-full" placeholder="email" required />
+				</label>
+				<label class="block">
+					<span class="sr-only">Password</span>
+					<input type="password" class="w-full" placeholder="password" required />
+				</label>
+				<label class="block">
+					<input type="checkbox" checked />
+					<span class="text-sm">Remember Me</span>
+				</label>
+				<button class="btn justify-self-start" type="submit">Sign in</button>
+				<a href="#" class="text-sm text-gray-400 dark:text-gray-600 hover:text-gray-400"
+					>Forgot the password?</a
+				>
 			</div>
+			<!--end login-->
 		</div>
 	</body>
 </html>
