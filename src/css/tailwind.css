@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.wrapper {
+	@apply flex justify-center items-center h-screen;
+}
+.card {
+	@apply p-20 text-center;
+}
+
 .code {
 	@apply text-cwc-red;
 }
