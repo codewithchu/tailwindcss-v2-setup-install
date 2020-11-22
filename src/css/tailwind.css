@@ -8,7 +8,3 @@
 .card {
 	@apply p-20 text-center;
 }
-
-.code {
-	@apply text-cwc-red;
-}
