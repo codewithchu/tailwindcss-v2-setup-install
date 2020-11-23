@@ -6,5 +6,5 @@
 	@apply flex justify-center items-center h-screen;
 }
 .card {
-	@apply p-20 text-center;
+	@apply p-20;
 }
