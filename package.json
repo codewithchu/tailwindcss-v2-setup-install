@@ -6,7 +6,7 @@
 	"scripts": {
 		"tw:build": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
 		"tw:prod": "cross-env NODE_ENV=production postcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
-		"tw:watch": "onchange 'tailwind.config.js' 'src/**/*.css' -- npm run tw:build"
+		"tw:watch": "onchange \"tailwind.config.js\" \"src/**/*.css\" -- npm run tw:build"
 	},
 	"keywords": [],
 	"author": "",
