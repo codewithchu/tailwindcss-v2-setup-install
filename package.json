@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"tw:build": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
-		"tw:prod": "NODE_ENV=production postcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
+		"tw:prod": "cross-env NODE_ENV=production postcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
 		"tw:watch": "onchange 'tailwind.config.js' 'src/**/*.css' -- npm run tw:build"
 	},
 	"keywords": [],
@@ -18,5 +18,8 @@
 		"postcss": "^8.1.8",
 		"postcss-cli": "^8.3.0",
 		"tailwindcss": "^2.0.1"
+	},
+	"devDependencies": {
+		"cross-env": "^7.0.3"
 	}
 }
